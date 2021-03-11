@@ -1,0 +1,13 @@
+{
+  "name": "no-cors",
+  "verison": "1.0.0",
+  "license": "MIT",
+  "main": "server.js",
+  "description": "CORS Anywhere is a reverse proxy which adds CORS headers to the proxied request. Request URL is taken from the path",
+  "dependencies": {
+    "cors-anywhere": "^0.4.3"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
