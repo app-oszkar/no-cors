@@ -2,12 +2,22 @@
   "name": "no-cors",
   "verison": "1.0.0",
   "license": "MIT",
-  "main": "server.js",
+  "private": true,
+  "main": "./dist/server.js",
   "description": "CORS Anywhere is a reverse proxy which adds CORS headers to the proxied request. Request URL is taken from the path",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "start": "node ./dist/server.js"
+  },
   "dependencies": {
-    "cors-anywhere": "^0.4.3"
+    "http-proxy": "^1.18.1",
+    "proxy-from-env": "^1.1.0"
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-url": "^6.0.0",
+    "rollup": "^2.41.1"
   }
 }
