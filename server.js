@@ -14,6 +14,11 @@ const config = {
   removeHeaders: [
     "cookie",
     "cookie2",
+    "referrer",
+    "path",
+    ":path",
+    "authority",
+    ":authority",
     // Strip Heroku-specific headers
     "x-request-start",
     "x-request-id",
@@ -30,7 +35,9 @@ const config = {
     "x-real-ip",
     "x-vercel-ip-country",
     "x-vercel-ip-country-region",
-    "x-vercel-ip-city"
+    "x-vercel-ip-city",
+    "x-vercel-cache",
+    "server"
   ],
   redirectSameOrigin: true,
   httpProxyOptions: {
